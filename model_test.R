@@ -13,7 +13,7 @@ pop[,1] <- seq(1,100,1) ## unique ID for each indiv
 pop[,2] <- sample(c(0,1),100,replace = TRUE) ## randomly assign male/female (0=M, 1=F)
 pop[,3] <- rep(0,100) ## mom ID = 0 for simulation founders
 pop[,4] <- rep(0,100) ## mom ID = 0 for simulation founders
-pop[,5] <- sample(c(-1:3),100,replace=TRUE) ## assign ages (could edit to model specific age structure)
+pop[,5] <- sample(c(-1:3),100,replace=TRUE) ## assign ages (could edit to model specific starting population age structure)
 pop[,6] <- rep(0,100) ## beginning number of offspring is 0 for all indivs
 
 
