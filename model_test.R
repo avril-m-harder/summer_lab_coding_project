@@ -3,7 +3,7 @@ setwd('/Users/Avril/Documents/summer_lab_coding_project/summer_lab_coding_projec
 ## set parameters -------------------------
 max.age <- 4 ## individuals die before reproducing in year 4 (last repro year = 3)
 brood <- 1 ## brood size (# of offspring per pair? probably needs to be 2 if we're going for replacement)
-#k <- 100 ## want to allow population size to vary about k
+k <- 100 ## want to allow population size to vary about k
 n.years <- 50 ## number of years over which to run simulation
 
 ## initialize population ------------------
