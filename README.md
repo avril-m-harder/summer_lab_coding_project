@@ -1,2 +1,3 @@
 ### Willoughby Lab Summer Coding Project
-#### Day 1: 5/26/21
+#### Overall goal:
+Write a functioning individual (or agent) based model. This should be a basic model that starts with 100 individuals and maintains roughly this population size over 50 years; some variation is good, but you don’t want a wildly fluctuating population size. Both sexes are capable of reproducing after 1 year, and offspring litter/clutch/brood size is 1 individual per year. No individuals live past 3 years. Your code should output the total population size, sex ratio, and number of newborns each year to a text file of some kind. Also, your code should be in a repository on GitHub, along with a readme that outlines how to run your code.
