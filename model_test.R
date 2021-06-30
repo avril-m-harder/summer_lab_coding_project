@@ -26,7 +26,8 @@ pop[,5] <- sample(c(-1:(max.age-1)),k,replace=TRUE) ## assign ages (could edit t
 pop[,6] <- rep(0,k) ## beginning number of offspring is 0 for all indivs
 
 for(y in 1:n.years){
-  pop <- pop[-(sample(c(1:nrow(pop)),1)),]
+  to.kill <- (sample(c(1:nrow(pop)),1))
+  pop <- pop[-to.kill,]
 }
 
 ### copied from J's RunModel.R:
