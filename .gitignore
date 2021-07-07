@@ -1,5 +1,5 @@
 .Rhistory
 .DS_Store
-./archive/
-./archive/*
+archive/
+archive/*
 ./output/
