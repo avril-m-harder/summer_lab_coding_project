@@ -1,5 +1,5 @@
 #setup
-setwd("/Users/jannawilloughby/GDrive/Willoughby lab/summer coding project/lab-coding-project/")   #set working directory
+setwd('/Users/Avril/Documents/summer_lab_coding_project/summer_lab_coding_project/')   #set working directory
 directory = getwd()
 outdir    = paste(directory,"/output/",sep="")                                                    #directory to save model output  
 source(paste(directory, "/source/FunctionSourcer.R", sep = ''))                                   #source functions and set source directory
