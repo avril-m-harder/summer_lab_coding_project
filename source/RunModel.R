@@ -28,5 +28,5 @@ RunModel <- function(replicates, r, directory){
     to.kill <- (sample(c(1:nrow(pop)),1))
     pop <- pop[-to.kill,]
   }
-  write.table(pop, paste0(directory,'/output/testpop_',r,'.txt'), sep='\t', col.names=FALSE, row.names=FALSE, append=TRUE)
+  write.table(pop, paste0(directory,'/output/testpop_rep',r,'.txt'), sep='\t', col.names=FALSE, row.names=FALSE, append=TRUE)
 }
