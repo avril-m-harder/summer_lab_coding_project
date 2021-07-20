@@ -27,6 +27,8 @@ RunModel <- function(replicates, r, directory){
   for(y in 1:n.years){
     to.kill <- (sample(c(1:nrow(pop)),1))
     pop <- pop[-to.kill,]
+    pairs <- MateSelect()
   }
   write.table(pop, paste0(directory,'/output/testpop_rep',r,'.txt'), sep='\t', col.names=FALSE, row.names=FALSE, append=FALSE)
+  write.table(pairs, paste0(directory,'/output/testpairs_rep',r,'.txt'), sep='\t', col.names=FALSE, row.names=FALSE, append=FALSE)
 }

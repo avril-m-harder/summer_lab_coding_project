@@ -7,7 +7,7 @@ setwd(paste0(directory,"/source/"))    # set temp working directory
 ## source functions
 # source(paste0(getwd(), "/RunModel.R"))
 
-## source all functions in /source/
+## source all functions in /source/ other than FunctionSourcer.R (this script)
 funcs <- list.files(paste0(getwd()))
 funcs <- funcs[-which(funcs == 'FunctionSourcer.R')]
-source(funcs)
+sapply(funcs, source, .GlobalEnv)
